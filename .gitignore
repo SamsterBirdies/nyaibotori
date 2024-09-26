@@ -3,3 +3,4 @@ inv_link.txt
 package.json
 package-lock.json
 node_modules/
+nohup.out
