@@ -24,7 +24,8 @@ const command_list =
 	'random_commander',
 	'random_GI_character',
 	'random_weapon',
-	'solve24'
+	'solve24',
+	'stats',
 ];
 
 module.exports = {
@@ -103,6 +104,10 @@ module.exports = {
 				"Solves a 24 game. More info here: https://en.wikipedia.org/wiki/24_(puzzle) \n"+
 				"Use num1: num2: num3: and num4: to input numbers\n"+
 				"**Example usage:** `/solve24 num1:7 num2:4 num3:7 num4:7`"
+			],
+			['stats',
+				"Prints statistics about the discord bot. Mostly for debugging. Prints bot start date, ps, and neofetch."+
+				"**Example usage:** `/stats`"
 			],
 		]);
 		

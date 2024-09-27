@@ -28,40 +28,49 @@ module.exports = {
 			try {
 				await command.autocomplete(interaction);
 			} catch (error) {
-				//console.error(error);
 			}
 		
 		} else if (interaction.isButton()) {
 			//button callback
-			//24 game
-			if (interaction.customId.startsWith("game24_")) {
-				const modal = new ModalBuilder()
-					.setCustomId(interaction.customId)
-					.setTitle('Submit solution');
-				const solution_input = new TextInputBuilder()
-					.setCustomId('game24_solution_entry')
-					// The label is the prompt the user sees for this input
-					.setLabel("Solution:")
-					// Short means only a single line of text
-					.setStyle(TextInputStyle.Short);
-				const firstActionRow = new ActionRowBuilder().addComponents(solution_input);
-				modal.addComponents(firstActionRow);
-				await interaction.showModal(modal);
+			try {
+				//24 game
+				if (interaction.customId.startsWith("game24_")) {
+					const modal = new ModalBuilder()
+						.setCustomId(interaction.customId)
+						.setTitle('Submit solution');
+					const solution_input = new TextInputBuilder()
+						.setCustomId('game24_solution_entry')
+						// The label is the prompt the user sees for this input
+						.setLabel("Solution:")
+						// Short means only a single line of text
+						.setStyle(TextInputStyle.Short);
+					const firstActionRow = new ActionRowBuilder().addComponents(solution_input);
+					modal.addComponents(firstActionRow);
+					await interaction.showModal(modal);
+				}
+			} catch (error) {
+				console.log(error);
+				await interaction.reply({ content: 'There was an error with this button!', ephemeral: true });
 			}
 				
 		} else if (interaction.isModalSubmit()) {
 			//modal submit callback
-			//24 game
-			if (interaction.customId.startsWith("game24_")) {
-				const numbers = interaction.customId.slice(7).split("");
-				let i = 0;
-				for (let number of numbers){
-					numbers[i] = Number(number);
-					i++;
+			try {
+				//24 game
+				if (interaction.customId.startsWith("game24_")) {
+					const numbers = interaction.customId.slice(7).split("");
+					let i = 0;
+					for (let number of numbers){
+						numbers[i] = Number(number);
+						i++;
+					}
+					const userid = interaction.user.id;
+					const uinput = interaction.fields.getTextInputValue('game24_solution_entry');
+					await interaction.reply({ content: TestAnswer24(numbers, uinput, userid) });
 				}
-				const userid = interaction.user.id;
-				const uinput = interaction.fields.getTextInputValue('game24_solution_entry');
-				await interaction.reply({ content: TestAnswer24(numbers, uinput, userid) });
+			} catch (error) {
+				console.log(error);
+				await interaction.reply({ content: 'There was an error processing this modal!', ephemeral: true });
 			}
 		}
 	},
