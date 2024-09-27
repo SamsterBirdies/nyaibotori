@@ -84,7 +84,7 @@ function TestAnswer24(numbers, input, userid) {
 		`Here, have a cookie.`,
 		`Here's a cookie!`,
 		`*headpats you*`,
-		`*give you headrubs*`,
+		`*gives you headrubs*`,
 		`Wow, you're so smart!`,
 		`You're an absolute genius!`,
 		`You're a pro!`,
@@ -123,11 +123,11 @@ function TestAnswer24(numbers, input, userid) {
 		}
 	};
 
-	if (input.trim() === "") return `<@${userid}>` + ` You must enter a value. ` + responses_lose[Math.floor(Math.random() * responses_lose.length)];
-	if (input.match(invalidChars)) return `<@${userid}>` + ` Input:\`${input}\`\n` + "Invalid chars used, try again. Use only:\n `+` `-` `*` `/` `(` `)`.\n" + responses_lose[Math.floor(Math.random() * responses_lose.length)];
-	if (!validNums(input)) return `<@${userid}>` + ` Input:\`${input}\`\nWrong numbers used, try again. ` + responses_lose[Math.floor(Math.random() * responses_lose.length)];
+	if (input.trim() === "") return `:x:<@${userid}>` + ` You must enter a value. ` + responses_lose[Math.floor(Math.random() * responses_lose.length)];
+	if (input.match(invalidChars)) return `:x:<@${userid}>` + ` Input:\`${input}\`\n` + "Invalid chars used, try again. Use only:\n `+` `-` `*` `/` `(` `)`.\n" + responses_lose[Math.floor(Math.random() * responses_lose.length)];
+	if (!validNums(input)) return `:x:<@${userid}>` + ` Input:\`${input}\`\nWrong numbers used, try again. ` + responses_lose[Math.floor(Math.random() * responses_lose.length)];
 	var calc = validEval(input);
-	if (typeof calc !== 'number') return `<@${userid}>` + ` Input:\`${input}\`\nThat is not a valid input; please try again. ` + responses_lose[Math.floor(Math.random() * responses_lose.length)];
-	if (calc !== 24) return `<@${userid}>` + ` Whoops, \`${input} = ${String(calc)}\`. ` + responses_lose[Math.floor(Math.random() * responses_lose.length)];
-	return `<@${userid}>` + " Valid solution! " + responses_win[Math.floor(Math.random() * responses_win.length)];
+	if (typeof calc !== 'number') return `:x:<@${userid}>` + ` Input:\`${input}\`\nThat is not a valid input; please try again. ` + responses_lose[Math.floor(Math.random() * responses_lose.length)];
+	if (calc !== 24) return `:x:<@${userid}>` + ` Whoops, \`${input} = ${String(calc)}\`. ` + responses_lose[Math.floor(Math.random() * responses_lose.length)];
+	return `:white_check_mark:<@${userid}>` + " Valid solution! " + responses_win[Math.floor(Math.random() * responses_win.length)] + `\nInput:||\`${input}\`||`;
 }

@@ -15,6 +15,7 @@ const command_list =
 [
 	'1v1',
 	'24',
+	'base_num_convert',
 	'forts_links',
 	'forts_pivots',
 	'genshin_character',
@@ -49,6 +50,12 @@ module.exports = {
 				"Play the 24 game.\n"+
 				"Optionally, you can use `digits:` to specify the amount of digits to use (Valid amounts: 4 through 24).\n"+
 				"**Example usage:** `/24` or `/24 digits:8`"
+			],
+			['base_num_convert',
+				"Converts a number from one base to another.\n"+
+				"- Valid base number range is from 2 to 36.\n"+
+				"- Accepts the following characters as input: `0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ`\n"+
+				"**Example usage:** `/base_num_convert number:128 base_in:10 base_out:16`"
 			],
 			['forts_links',
 				"Links a helpful link. Good for modding advice or something idk.\n" +
