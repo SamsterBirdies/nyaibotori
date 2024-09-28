@@ -205,7 +205,7 @@ module.exports = {
 		} else {
 			final_text += user.toString();
 			if (isNumber(username_raw.slice(-4))) {
-				final_text += replies_numbername[Math.floor(Math.random() * replies_numbername_bot.length)] + "\n";
+				final_text += replies_numbername[Math.floor(Math.random() * replies_numbername.length)] + "\n";
 			}
 			for (let [key, value] of replies_name_specific) {
 				if (username_raw.toLowerCase().includes(key)) {
