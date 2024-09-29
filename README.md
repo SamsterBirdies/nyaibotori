@@ -25,4 +25,6 @@ You can refresh global and guild commands by running `node deploy-commands.js` a
 
 Run bot with `node .`
 
+Some commands may have additional requirements. For example, /stats requires specific console commands.
+
 For more help on setting up the bot visit https://discordjs.guide/preparations/
