@@ -37,12 +37,11 @@ module.exports = {
 				if (interaction.customId.startsWith("game24_")) {
 					const modal = new ModalBuilder()
 						.setCustomId(interaction.customId)
-						.setTitle('Submit solution');
+						.setTitle(`24 Game`);
 					const solution_input = new TextInputBuilder()
 						.setCustomId('game24_solution_entry')
-						// The label is the prompt the user sees for this input
-						.setLabel("Solution:")
-						// Short means only a single line of text
+						// Label with numbers
+						.setLabel(`Solution for ${interaction.customId.slice(7)}:`)
 						.setStyle(TextInputStyle.Short);
 					const firstActionRow = new ActionRowBuilder().addComponents(solution_input);
 					modal.addComponents(firstActionRow);
@@ -58,7 +57,7 @@ module.exports = {
 			try {
 				//24 game
 				if (interaction.customId.startsWith("game24_")) {
-					const numbers = interaction.customId.slice(7).split("");
+					let numbers = interaction.customId.slice(7).split(""); //get numbers
 					let i = 0;
 					for (let number of numbers){
 						numbers[i] = Number(number);
