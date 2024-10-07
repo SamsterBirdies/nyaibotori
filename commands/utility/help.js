@@ -27,6 +27,7 @@ const command_list =
 	'random_weapon',
 	'solve24',
 	'stats',
+	'bc_valid_dimensions',
 ];
 
 module.exports = {
@@ -116,6 +117,12 @@ module.exports = {
 				"Prints statistics about the discord bot. Mostly for debugging. Prints bot start date, ps, and neofetch."+
 				"**Example usage:** `/stats`"
 			],
+			['bc_valid_dimensions',
+				"Block compression images like .dds bc7 should ideally have its dimensions be divisible by 4 (including its mipmaps).\n"+
+				"This is because these image types are stored as a series of 4x4 blocks in order for the GPU to quickly access a portion of the image.\n"+
+				"This tool can help find a suitable dimension closest to the desired dimension that can support a given level of mipmaps.\n"+
+				"**Example usage:** `/bc_valid_dimensions mipmap_levels:4 width:300 height:300` for a dimension closest to 300x300 that can support 4 mipmap levels."
+			]
 		]);
 		
 		if (command_list.includes(selected_command)){
