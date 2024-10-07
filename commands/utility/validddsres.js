@@ -20,7 +20,7 @@ module.exports = {
 	data: command,
 	async execute(interaction) {
 		//gather input
-		const m_level = interaction.options.getNumber('mipmap_level');
+		const m_level = interaction.options.getNumber('mipmap_levels');
 		const w_source = interaction.options.getNumber('width');
 		const h_source = interaction.options.getNumber('height');
 		
