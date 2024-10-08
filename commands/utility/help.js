@@ -127,7 +127,11 @@ module.exports = {
 			['avatar',
 				"Displays a user's avatar.\n"+
 				"This shows up under someones profile context menu > Apps."
-			]
+			],
+			['image_nyaibotori',
+				"Displays a portrait of me! ≧◡≦\n"+
+				"**Example usage:** `/image_nyaibotori`"
+			],
 		]);
 		
 		if (command_list.includes(selected_command)){
