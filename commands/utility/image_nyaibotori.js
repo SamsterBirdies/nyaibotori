@@ -16,6 +16,9 @@ module.exports = {
 			"https://www.samsterbirdies.com/images/nyaibotori/5.webp",
 			"https://www.samsterbirdies.com/images/nyaibotori/6.webp",
 			"https://www.samsterbirdies.com/images/nyaibotori/7.webp",
+			"https://www.samsterbirdies.com/images/nyaibotori/8.webp",
+			"https://www.samsterbirdies.com/images/nyaibotori/9.webp",
+			"https://www.samsterbirdies.com/images/nyaibotori/10.webp",
 		];
 		const replies =
 		[
