@@ -28,6 +28,7 @@ const command_list =
 	'solve24',
 	'stats',
 	'bc_valid_dimensions',
+	'avatar',
 ];
 
 module.exports = {
@@ -122,6 +123,10 @@ module.exports = {
 				"This is because these image types are stored as a series of 4x4 blocks in order for the GPU to quickly access a portion of the image.\n"+
 				"This tool can help find a suitable dimension closest to the desired dimension that can support a given level of mipmaps.\n"+
 				"**Example usage:** `/bc_valid_dimensions mipmap_levels:4 width:300 height:300` for a dimension closest to 300x300 that can support 4 mipmap levels."
+			],
+			['avatar',
+				"Displays a user's avatar.\n"+
+				"This shows up under someones profile context menu > Apps."
 			]
 		]);
 		
