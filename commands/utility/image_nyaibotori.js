@@ -7,19 +7,7 @@ command["contexts"] = [0, 1, 2];
 module.exports = {
 	data: command,
 	async execute(interaction) {
-		const pics =
-		[
-			"https://www.samsterbirdies.com/images/nyaibotori/1.webp",
-			"https://www.samsterbirdies.com/images/nyaibotori/2.webp",
-			"https://www.samsterbirdies.com/images/nyaibotori/3.webp",
-			"https://www.samsterbirdies.com/images/nyaibotori/4.webp",
-			"https://www.samsterbirdies.com/images/nyaibotori/5.webp",
-			"https://www.samsterbirdies.com/images/nyaibotori/6.webp",
-			"https://www.samsterbirdies.com/images/nyaibotori/7.webp",
-			"https://www.samsterbirdies.com/images/nyaibotori/8.webp",
-			"https://www.samsterbirdies.com/images/nyaibotori/9.webp",
-			"https://www.samsterbirdies.com/images/nyaibotori/10.webp",
-		];
+		const pic_count = 11
 		const replies =
 		[
 			"Look its me! :blush:",
@@ -27,7 +15,7 @@ module.exports = {
 			"Oh who's this cutie? :smiley_cat:",
 			"Hehehe :grin:",
 		];
-		const selected_pic = pics[Math.floor(Math.random() * pics.length)];
+		const selected_pic = `https://www.samsterbirdies.com/images/nyaibotori/${Math.floor(Math.random() * pic_count) + 1}.webp`;
 		const final_text = replies[Math.floor(Math.random() * replies.length)];
 		//embed builder
 		const pic_embed = new EmbedBuilder()
