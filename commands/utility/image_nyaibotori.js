@@ -7,7 +7,7 @@ command["contexts"] = [0, 1, 2];
 module.exports = {
 	data: command,
 	async execute(interaction) {
-		const pic_count = 11
+		const pic_count = 14
 		const replies =
 		[
 			"Look its me! :blush:",

@@ -116,12 +116,12 @@ module.exports = {
 			['etan', `? More like nate.`],
 			['genius', `You think you're a genius? You're dumber than a box of rocks.`],
 			[']', `Imagine having a clan tag. You think anyone actually cares about some random group of fart heads?`],
-			['42 ', `I'm gonna laugh my head off if you really think that you are the answer to the ultimate question of life, the universe, and everything.`],
+			['42 ', `I'm gonna laugh my head off if you really think that you are the answer to the ultimate question of life, the universe, and everything!`],
 			['inator', `You are not doofenshmirtz even if your face looks like it.`],
 			['! ', `You really felt so unimportant and worthless that you modified your name to appear at the top of the member list just to get people to notice your existence. I almost feel bad for you.`],
 			['doctor',`You're not smart enough to get a doctorate. Not in a million years.`],
-			['doom', `You're doomed.`],
-			['gamer', `PFFFT! Hello mobile gamer . Playing some phone games doesn't make you a real gamer. Even your parents do that.`],
+			['doom', `You're doomed...`],
+			['gamer', `PFFFT! Hello mobile gamer. Playing some phone games doesn't make you a real gamer. Even your parents do that.`],
 			['enjoyer', `Is that all you enjoy in life?`],
 			['fire', `I'll extinguish you.`],
 			['big', `You fat!`],
@@ -176,6 +176,9 @@ module.exports = {
 			`I bet you think the worst she can say is no. But let me tell you something. Nobody will find any interest in you ever. You have failed as a human. You serve no purpose, you have no good looks, you smell terrible, you have no friends. I don't know what makes you keep going. It's probably the fact that you think you still have a little bit of hope in this world. But im here to remind you that you have to give up. If I were you, I would just sleep and lets the days pass. You have nothing thats worth living for.`,
 			`You are the type of person that would eat silica gel and die if it werent labeled "DO NOT EAT"!\nHeck, I'm starting to doubt if even that is sufficient for you. I can imagine you thinking that it's telling someone else to not eat your snack unless it explicitly says "DO NOT EAT THIS, ${username_raw.toUpperCase()}!!!"`,
 			`I hope you don't actually think that anyone likes you. Every single time that anyone has either smiled at you, laughed at your jokes, or decided to be your friend... it was all done out of pity. Behind your back, they say "be nice to ${username}, it's not his fault that he was born like this".`,
+			`Don't even talk, you scored under 25% on a multiple choice quiz.`,
+			`No matter what you do, ${username}, you will always be wrong. If you choose anything, you pick the wrong choice. If you don't choose, you chose nothing, which is the coward's choice. If you say anything good about yourself, you are arrogant. If you say anything bad about yourself, you gotta quit feeling sorry for yourself. If you say nothing about yourself, you are nobody. If you are single, you are a loser that cant find anyone that likes you. If you have a partner, you are desperate for other people's love because you have no worth within yourself. If you thought 2+2=5, you failed at math. If you thought 2+2=4, O’Brien will correct you that “Sometimes, ${username}. Sometimes they are five. Sometimes they are three. Sometimes they are all of them at once. You must try harder.” If you dont try, you are lazy. If you try, you are being too hard on yourself. If you continue living, you are wasting precious resources and a detriment to society. If you decide to stop living, you are a coward and selfish. There is no escape for you.`,
+			
 			
 		];
 		//appended specific
