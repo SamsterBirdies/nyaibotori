@@ -45,7 +45,7 @@ module.exports = {
 		if (characters.includes(selected_character)){
 			await interaction.reply({ content: 'https://genshin-impact.fandom.com/wiki/' + selected_character.replace(" ", "_"), ephemeral: false });
 		} else {
-			await interaction.reply({ content: "Error: playable character not found.", ephemeral: true });
+			await interaction.reply({ content: "Error: playable character not found.", ephemeral: false });
 		}
 	},
 };

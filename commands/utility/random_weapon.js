@@ -10,7 +10,7 @@ command["contexts"] = [0, 1, 2];
 module.exports = {
 	data: command,
 	async execute(interaction) {
-		const visible = interaction.options.getBoolean('ephemeral') ?? 'true';
+		const visible = interaction.options.getBoolean('ephemeral') ?? 'false';
 		const commanders =
 		[
 			'Machinegun','Minigun','Sniper','AP Sniper','AP Minigun', //no tech or upgrade

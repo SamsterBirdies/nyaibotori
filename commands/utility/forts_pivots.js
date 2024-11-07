@@ -55,6 +55,6 @@ module.exports = {
 		}
 		output += " = {" + outputPivot[0] + ", " + outputPivot[1] + "}";
 		//output message
-		await interaction.reply({ content: output, ephemeral: true });
+		await interaction.reply({ content: output, ephemeral: false });
 	},
 };

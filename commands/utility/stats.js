@@ -26,6 +26,6 @@ module.exports = {
 		message += `**ps -C node**\n\`\`\`${ps_stat}\`\`\`\n`;
 		message += `**neofetch**\n\`\`\`${neofetch}\`\`\`\n`;
 		await interaction.editReply({ content: message,
-		ephemeral: true });
+		ephemeral: false });
 	},
 };
