@@ -29,6 +29,7 @@ const command_list =
 	'stats',
 	'bc_valid_dimensions',
 	'avatar',
+	'genshin_em',
 ];
 
 module.exports = {
@@ -131,6 +132,10 @@ module.exports = {
 			['image_nyaibotori',
 				"Displays a portrait of me! ≧◡≦\n"+
 				"**Example usage:** `/image_nyaibotori`"
+			],
+			['genshin_em',
+				"Calculates Genshin Impact elemental mastery bonus damage according to https://genshin-impact.fandom.com/wiki/Elemental_Mastery\n"+
+				"**Example usage:** `/genshin_em em:300`"
 			],
 		]);
 		
