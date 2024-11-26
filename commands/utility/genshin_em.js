@@ -28,7 +28,7 @@ module.exports = {
 		`* **${ Round2(type1)}%** increase to vaporize and melt.\n`+
 		`* **${ Round2(type2)}%** increase to overload, superconduct, electro-charged, burning, shattered, swirl, bloom, hyperbloom, and burgeon.\n`+
 		`* **${ Round2(type3)}%** increase to aggravate and spread.\n`+
-		`* **${ Round2(type4)}%** damage absorption of shields created by crystallize.\n`
+		`* **${ Round2(type4)}%** increased damage absorption of shields created by crystallize.\n`
 		});
 	},
 };
