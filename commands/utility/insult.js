@@ -61,13 +61,20 @@ module.exports = {
 			['alpha', 'beta'],
 			['delta', 'beta'],
 			['omega', 'beta'],
+			['sigma', 'beta'],
 			['peak', 'worst'],
-			['great', 'terrible'],
+			['great', 'crap'],
 			['cute', 'ugly'],
 			['kawaii', 'ugly'],
 			['42 ', 'farty poo '],
 			['pro', 'noob'],
 			['senpai', 'kouhai'],
+			['black', 'white'],
+			['white', 'black'],
+			['yellow', 'pee'],
+			['green', 'vomit'],
+			['general', 'private'],
+			['fire', 'extinguished'],
 		]);
 		for (let [key, value] of name_change) {
 			username = username.toLowerCase().replace(key, value)
@@ -178,7 +185,8 @@ module.exports = {
 			`I hope you don't actually think that anyone likes you. Every single time that anyone has either smiled at you, laughed at your jokes, or decided to be your friend... it was all done out of pity. Behind your back, they say "be nice to ${username}, it's not his fault that he was born like this".`,
 			`Don't even talk, you scored under 25% on a multiple choice quiz.`,
 			`No matter what you do, ${username}, you will always be wrong. If you choose anything, you pick the wrong choice. If you don't choose, you chose nothing, which is the coward's choice. If you say anything good about yourself, you are arrogant. If you say anything bad about yourself, you gotta quit feeling sorry for yourself. If you say nothing about yourself, you are nobody. If you are single, you are a loser that cant find anyone that likes you. If you have a partner, you are desperate for other people's love because you have no worth within yourself. If you thought 2+2=5, you failed at math. If you thought 2+2=4, O’Brien will correct you that “Sometimes, ${username}. Sometimes they are five. Sometimes they are three. Sometimes they are all of them at once. You must try harder.” If you dont try, you are lazy. If you try, you are being too hard on yourself. If you continue living, you are wasting precious resources and a detriment to society. If you decide to stop living, you are a coward and selfish. There is no escape for you.`,
-			
+			`Bro... I heard you go to Chuck E. Cheese to hit on girls.`,
+			`${username}, you really gotta quit your Roblox dating.`,
 			
 		];
 		//appended specific
